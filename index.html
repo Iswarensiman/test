@@ -40,7 +40,7 @@ function OptanonWrapper() { }
 var name = window.location.hostname;
 name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
 console.log("name",name);
- var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+ regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
  var results = regex.exec(location.search);
 // {
 //  return results == null ? "" : decodeURIComponent(results[1].replace(/\+/i, " "));
