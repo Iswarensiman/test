@@ -43,7 +43,7 @@ name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
 
  results = regex.exec(location.search);
 {
- return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+ return results == null ? "" : decodeURIComponent(results[1].replace(/\+/i, " "));
 }
 
 If(window.location.hostname == "iswarensiman.github.io")
