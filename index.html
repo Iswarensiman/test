@@ -38,14 +38,6 @@ function OptanonWrapper() { }
 </script>
 <script>
 var name = window.location.hostname;
-name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-console.log("name",name);
- regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
- var results = regex.exec(location.search);
-// {
-//  return results == null ? "" : decodeURIComponent(results[1].replace(/\+/i, " "));
-// }
-console.log("results",results);
 if(window.location.hostname == "iswarensiman.github.io")
 {
 var url;
