@@ -542,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             SET @error = RequestParameter("error")
             SET @message = RequestParameter("message")
             ]%%
-                      <form id="smartcapture-block-qel8lm80b2" class="smartcapture-content-wrapper fuelux" novalidate="novalidate" action="%%=CloudPagesURL(1734)=%%" method="post" style="font-size: 0;">
+                      <form id="smartcapture-block-qel8lm80b2" class="smartcapture-content-wrapper fuelux" novalidate="novalidate" action="https://cloud.carcare.mobil.com/nba_formhandler" method="post" style="font-size: 0;">
                        %%[ IF EMPTY(@ok) AND EMPTY(@error) THEN ]%%
                         <input type="hidden" id="js-participationweek" name="ParticipationWeek" />
                         <div class="col-container inner-container form-contain" id="form-anchor">
@@ -629,7 +629,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                                 %%[ ELSE ]%%
                 %%[ IF NOT EMPTY(@ok) THEN 
-                    Redirect(CONCAT('/entryconfirmation','Success',1))]%%
+                    Redirect(CONCAT('https://www.gobehindthedrive.com/entryconfirmation','Success',1))]%%
                 %%[ ENDIF ]%%
 
                 %%[ IF NOT EMPTY(@error) THEN ]%%
