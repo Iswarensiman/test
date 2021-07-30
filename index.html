@@ -37,20 +37,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 function OptanonWrapper() { }
 </script>
 <script>
+var name = window.location.hostname;
 name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-
+console.log("name",name);
  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-
- results = regex.exec(location.search);
+ var results = regex.exec(location.search);
+// {
+//  return results == null ? "" : decodeURIComponent(results[1].replace(/\+/i, " "));
+// }
+console.log("results",results);
+if(window.location.hostname == "iswarensiman.github.io")
 {
- return results == null ? "" : decodeURIComponent(results[1].replace(/\+/i, " "));
-}
-
-If(window.location.hostname == "iswarensiman.github.io")
-{
-Var url;
-url = "google.com?utm_medium="+getParameterByName("utm_medium")+"&utm_source="+getParameterByName("utm_source")+"&utm_campaign="+getParameterByName("utm_campaign")+"&utm_content="+getParameterByName("utm_content")+"&dci="+getParameterByName("dci")+getParameterByName("utm_content")+"&customd="+getParameterByName("customd");
-setTimeout("location.href = url;",5000);
+var url;
+url = "https://www.google.com?utm_medium="+getParameterByName("utm_medium")+"&utm_source="+getParameterByName("utm_source")+"&utm_campaign="+getParameterByName("utm_campaign")+"&utm_content="+getParameterByName("utm_content")+"&dci="+getParameterByName("dci")+getParameterByName("utm_content")+"&customd="+getParameterByName("customd");
+setTimeout("location.href = url",5000);
+console.log("url",url); 
 }
 </script>
 <!-- OneTrust Cookies Consent Notice end for gobehindthedrive.com -->
